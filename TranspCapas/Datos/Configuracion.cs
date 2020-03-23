@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Datos
+namespace Modelo
 {
     public class Configuracion
     {
-        static string cadenaConexion = @"Data Source=SQL-AC\DOCENTE2;Initial Catalog=vehiculosWCG;User ID=DOCENTE2; Password=98jhvd2017centr0";
+        //static string cadenaConexion = @"Data Source=PALE-HP\SQLEXPRESS; Initial Catalog=ejinstitucion; User ID=user; Password=password";
+        static string cadenaConexion = @"Data Source=PALE-HP\SQLEXPRESS; Initial Catalog=ejinstitucion; Trusted_Connection=true";
 
         public static string CadenaConexion
         {
             get { return cadenaConexion; }
-        }
+        }    
     }
 }
